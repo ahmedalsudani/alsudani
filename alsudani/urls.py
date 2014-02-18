@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.http import HttpResponse
 
 from django.contrib import admin
 admin.autodiscover()
@@ -14,6 +15,6 @@ urlpatterns = patterns('',
     # url(r'lab/', include('')),
     # url(r'projects/', include('')),
 
-
+    url(r'^healthcheck/', lambda request: HttpResponse('OK')),
     url(r'^admin/', include(admin.site.urls)),
 )
