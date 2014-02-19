@@ -5,6 +5,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 WSGI_APPLICATION = 'alsudani.wsgi.application'
 
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'))
 
 # Application definition
 INSTALLED_APPS = (
