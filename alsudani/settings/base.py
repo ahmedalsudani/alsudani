@@ -48,8 +48,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
+STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
+
+STATIC_ROOT = './static/'
+
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, '../assets'),
+)
+
 PIPELINE_COMPILERS = (
-  'pipeline.compilers.sass.SASSCompiler',
+    'pipeline_compass.compass.CompassCompiler',
+    'pipeline.compilers.sass.SASSCompiler',
 )
