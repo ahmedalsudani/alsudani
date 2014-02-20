@@ -15,9 +15,12 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pipeline',
 )
 
-ALLOWED_HOSTS = ['ahmed.al-sudani.com']
+ALLOWED_HOSTS = [
+    'ahmed.al-sudani.com',
+]
 
 ROOT_URLCONF = 'alsudani.urls'
 
@@ -46,3 +49,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATIC_URL = '/static/'
+
+PIPELINE_COMPILERS = (
+  'pipeline.compilers.sass.SASSCompiler',
+)
