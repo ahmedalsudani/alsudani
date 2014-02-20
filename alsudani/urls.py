@@ -11,12 +11,15 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     # Parked URL patterns:
-    # url(r'blog/', include('')),
     # url(r'portfolio/', include('')),
     # url(r'lab/', include('')),
     # url(r'projects/', include('')),
 
-    url(r'^$', home.views.index),
-    url(r'^healthcheck/', lambda request: HttpResponse('OK')),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', home.views.index, name='index'),
+    # TODO Change to about
+    url(r'^about/', home.views.index, name='about'),
+    # TODO Change to blog
+    url(r'blog/', home.views.index, name='blog'),
+    url(r'^healthcheck/', lambda request: HttpResponse('OK'), name='healthcheck'),
+    url(r'^admin/', include(admin.site.urls), name='admin'),
 )

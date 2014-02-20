@@ -7,4 +7,4 @@ from django.template import loader, Context
 def index(request):
     t = loader.get_template('index.html')
     # How ugly
-    return HttpResponse(t.render(Context({})))
+    return HttpResponse(t.render(Context({'title': 'Hello, world!'})))
