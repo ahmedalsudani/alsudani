@@ -7,7 +7,7 @@ WSGI_APPLICATION = 'alsudani.wsgi.application'
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),
                  os.path.join(BASE_DIR, 'home/templates')
-)
+                 )
 
 # Application definition
 INSTALLED_APPS = (
@@ -57,10 +57,5 @@ STATIC_ROOT = './static/'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '../assets'),
-)
-
-PIPELINE_COMPILERS = (
-    'pipeline_compass.compass.CompassCompiler',
-    'pipeline.compilers.sass.SASSCompiler',
+    os.path.join(BASE_DIR, 'static'),
 )

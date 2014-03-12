@@ -8,7 +8,7 @@
     <title>
         {% block title %}
             {% comment %}
-            Don't prepend '|' if we don't have a specific title for this page
+            Don't prepend '-' if we don't have a specific title for this page
             {% endcomment %}
             {% if title %}
                 {{ title }} - Ahmed Al-Sudani
@@ -18,8 +18,7 @@
         {% endblock %}
     </title>
 
-    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
     <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -48,6 +47,12 @@
             {% endcomment %}
         {% endblock %}
         {% block footer %}
+        {% endblock %}
+
+        {% block sidebar %}
+        <div id="sidebar">
+
+        </div>
         {% endblock %}
     </div>
 </body>

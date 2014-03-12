@@ -16,7 +16,6 @@ urlpatterns = patterns('',
     # url(r'projects/', include('')),
 
     url(r'^$', home.views.index, name='index'),
-    # TODO Change to about
     url(r'^about/', home.views.about, name='about'),
     # TODO Change to blog
     url(r'blog/', home.views.index, name='blog'),

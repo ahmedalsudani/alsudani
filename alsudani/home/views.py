@@ -13,4 +13,4 @@ def index(request, template='index.html'):
 
 def about(request, template='about.html'):
     t = loader.get_template(template)
-    return HttpResponse(t.render(Context({'title': 'About'})))
+    return HttpResponse(t.render(Context({ 'title': 'About', })))
