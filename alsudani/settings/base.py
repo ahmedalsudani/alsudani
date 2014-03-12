@@ -22,6 +22,7 @@ INSTALLED_APPS = (
 
 ALLOWED_HOSTS = [
     'ahmed.al-sudani.com',
+    '-',
 ]
 
 ROOT_URLCONF = 'alsudani.urls'
