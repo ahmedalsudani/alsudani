@@ -3,3 +3,4 @@
 *.pyc
 *.sass-cache
 /static
+/archive.zip
