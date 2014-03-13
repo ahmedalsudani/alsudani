@@ -22,9 +22,6 @@ INSTALLED_APPS = (
 
 ALLOWED_HOSTS = [
     'ahmed.al-sudani.com',
-    # ELB healthcheck won't work unless I do this or something else ...
-    # TODO Figure out Apache settings
-    '*',
 ]
 
 ROOT_URLCONF = 'alsudani.urls'
