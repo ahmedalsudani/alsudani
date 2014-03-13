@@ -22,6 +22,9 @@ INSTALLED_APPS = (
 
 ALLOWED_HOSTS = [
     'ahmed.al-sudani.com',
+    'secure.al-sudani.com',
+    # TODO find a way to detect elb in Apache and set header to amazon-elb
+    'amazon-elb',
 ]
 
 ROOT_URLCONF = 'alsudani.urls'
