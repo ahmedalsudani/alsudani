@@ -3,6 +3,8 @@ __author__ = 'ahmed'
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+SITE_ID = 1
+
 WSGI_APPLICATION = 'alsudani.wsgi.application'
 
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),
@@ -16,9 +18,11 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
     'simpleblog',
     'pipeline',
+    'endless_pagination',
 )
 
 ALLOWED_HOSTS = [
@@ -38,6 +42,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+)
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
