@@ -18,10 +18,12 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    # TODO try to get rid of
     'django.contrib.sites',
     'django.contrib.staticfiles',
     'simpleblog',
     'pipeline',
+    # TODO shouldn't have to be here
     'endless_pagination',
 )
 

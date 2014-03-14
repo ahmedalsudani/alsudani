@@ -18,7 +18,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls), name='admin'),
     url(r'^$', home.views.index, name='index'),
     url(r'^about/$', home.views.about, name='about'),
-    # TODO Change to blog
     url(r'blog/', include('simpleblog.urls'), name='blog'),
     url(r'^healthcheck/', lambda request: HttpResponse('OK'), name='healthcheck'),
 )
