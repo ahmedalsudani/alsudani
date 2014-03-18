@@ -1,6 +1,7 @@
-.idea
+.idea/
 *.sqlite3
 *.pyc
 *.sass-cache
-/static
+/static/
 /archive.zip
+/build/
