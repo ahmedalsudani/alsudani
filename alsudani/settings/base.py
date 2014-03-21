@@ -25,6 +25,8 @@ INSTALLED_APPS = (
     'pipeline',
     # TODO shouldn't have to be here
     'endless_pagination',
+    'markdown_deux',
+    'pagedown',
 )
 
 ALLOWED_HOSTS = [

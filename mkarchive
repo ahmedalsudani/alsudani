@@ -1,1 +1,3 @@
 git archive --format=zip HEAD > archive.zip
+git rev-parse HEAD > .git-commit
+zip archive.zip .git-commit
