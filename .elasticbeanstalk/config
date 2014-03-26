@@ -1,0 +1,6 @@
+[global]
+ApplicationName=al-sudani.com
+DevToolsEndpoint=git.elasticbeanstalk.us-east-1.amazonaws.com
+EnvironmentName=al-sudani
+Region=us-east-1
+AwsCredentialFile=/home/ahmed/.elasticbeanstalk/aws_credential_file
