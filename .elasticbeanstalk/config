@@ -1,6 +1,17 @@
 [global]
 ApplicationName=al-sudani.com
+AwsCredentialFile=/home/ahmed/.elasticbeanstalk/aws_credential_file
 DevToolsEndpoint=git.elasticbeanstalk.us-east-1.amazonaws.com
 EnvironmentName=al-sudani
+OptionSettingFile=.elasticbeanstalk/optionsettings
 Region=us-east-1
-AwsCredentialFile=/home/ahmed/.elasticbeanstalk/aws_credential_file
+ServiceEndpoint=https://elasticbeanstalk.us-east-1.amazonaws.com
+
+[branches]
+wip=al-sudani
+
+[branch:wip]
+ApplicationVersionName=Sample Application
+EnvironmentName=al-sudani
+OptionSettingFile=/home/ahmed/Envs/alsudani/.elasticbeanstalk/optionsettings.al-sudani
+
