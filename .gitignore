@@ -6,3 +6,6 @@
 /archive.zip
 /build/
 /.git-commit
+# Just a hack to get PyCharm to work with compass. Add a symlink if it
+# doesn't work in the future
+/alsudani/assets/sass/compass

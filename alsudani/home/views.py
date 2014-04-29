@@ -8,7 +8,6 @@ def index(request, template='index.html'):
     t = loader.get_template(template)
     # How ugly
     return HttpResponse(t.render(Context({
-        'title': 'Hello, world!'
     })))
 
 def about(request, template='about.html'):

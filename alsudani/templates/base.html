@@ -28,6 +28,10 @@
 
 <body>
     <div id="container">
+    <header class="header">
+        <h1 class="hero-site logo">
+            Ahmed Al-Sudani
+        </h1>
         {% block nav %}
             <nav>
                 <ul>
@@ -41,6 +45,7 @@
                 </ul>
             </nav>
         {% endblock %}
+    </header>
         {% block content %}
             {% comment %}
             Override this block with content
