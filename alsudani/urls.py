@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.http import HttpResponse
-import home.views
+import alsudani.views
+
 
 from django.contrib import admin
 admin.autodiscover()
@@ -16,8 +17,6 @@ urlpatterns = patterns('',
     # url(r'projects/', include('')),
 
     url(r'^admin/', include(admin.site.urls), name='admin'),
-    url(r'^$', home.views.index, name='index'),
-    url(r'^about/$', home.views.about, name='about'),
-    url(r'blog/', include('simpleblog.urls'), name='blog'),
+    url(r'^$', alsudani.views.about, name='index'),
     url(r'^healthcheck/', lambda request: HttpResponse('OK'), name='healthcheck'),
 )
