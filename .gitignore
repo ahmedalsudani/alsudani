@@ -9,3 +9,5 @@
 # Just a hack to get PyCharm to work with compass. Add a symlink if it
 # doesn't work in the future
 /alsudani/assets/sass/compass
+# I'll probably never use plain CSS
+/alsudani/static/css/*
