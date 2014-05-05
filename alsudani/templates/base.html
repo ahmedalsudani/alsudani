@@ -50,12 +50,14 @@
             Override this block with content
             {% endcomment %}
         {% endblock %}
-        {% block footer %}
-        {% endblock %}
 
         {% block sidebar %}
         <div id="sidebar">
 
+        {% block footer %}
+            <div class="ext-links">
+            </div>
+        {% endblock %}
         </div>
         {% endblock %}
     </div>
