@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <div id="container">
+<div id="container">
     <header class="header">
         <h1 class="hero-site logo">
             Ahmed Al-Sudani
@@ -44,21 +44,21 @@
             </nav>
         {% endblock %}
     </header>
-        {% block content %}
-            {% comment %}
-            Override this block with content
-            {% endcomment %}
-        {% endblock %}
+    {% block content %}
+        {% comment %}
+        Override this block with content
+        {% endcomment %}
+    {% endblock %}
 
-        {% block sidebar %}
-        <div id="sidebar">
+    {% block sidebar %}
+    <div id="sidebar">
 
-        {% block footer %}
-            <div class="footer">
-            </div>
-        {% endblock %}
+    {% block footer %}
+        <div class="footer">
         </div>
-        {% endblock %}
+    {% endblock %}
     </div>
+    {% endblock %}
+</div>
 </body>
 </html>
