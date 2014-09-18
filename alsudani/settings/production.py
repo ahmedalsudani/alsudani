@@ -18,3 +18,6 @@ DATABASES = {
         'PORT': os.environ['RDS_PORT'],
     }
 }
+
+# Google analytics
+GA_CODE = os.environ['GA_CODE']
