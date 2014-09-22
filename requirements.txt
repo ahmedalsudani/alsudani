@@ -6,3 +6,6 @@ futures==2.1.6
 python-memcached==1.53
 wsgiref==0.1.2
 psycopg2==2.5.2
+django-markdown-deux==1.0.4
+django-pagedown==0.1.0
+markdown2==2.3.0

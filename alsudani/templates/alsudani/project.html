@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
+{% load markdown_deux_tags %}
 {% block content %}
 <h2>Projects</h2>
 <h3>{{ project.project_name }}</h3>
 <a href="{{ project.project_url }}">Project page</a>
 
-{{ project.description|linebreaks }}
+{{ project.description|markdown }}
 {% endblock %}
