@@ -1,3 +1,5 @@
+@import "compass/css3/box-shadow";
+
 $header-font: Arimo, sans-serif;
 $main-font: Merriweather, Georgia, serif;
 
@@ -30,17 +32,19 @@ html {
 }
 
 body {
+  background: #eee;
   margin: 0;
   height: 100%;
-  padding: 10px;
 }
 
 #container {
-  max-width: 600px;
+  background: white;
+  max-width: 800px;
   margin: 0 auto;
   min-height: 100%;
+  @include box-shadow(-10px -10px 40px black);
   > * {
-    padding: 5px 0;
+    padding: 5px 20px;
     margin: 0 5px;
   }
 }
@@ -62,5 +66,5 @@ p {
 }
 
 .blist li {
-  margin: 5px initial;
+  margin: 5px 18px;
 }
