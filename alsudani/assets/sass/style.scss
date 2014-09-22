@@ -1,9 +1,18 @@
 $header-font: Arimo, sans-serif;
 $main-font: Merriweather, Georgia, serif;
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
+nav {
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  li:last-child {
+    margin-right: 0px;
+  }
 }
 
 * {
@@ -12,6 +21,7 @@ nav ul {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
+  line-height: 1.3em;
 }
 
 html {
@@ -29,7 +39,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   min-height: 100%;
-  p, h1, h2, ul {
+  > * {
     padding: 5px 0;
     margin: 0 5px;
   }
@@ -43,6 +53,14 @@ body {
   }
 }
 
+h1, h2, h3,h4 {
+  font-family: $header-font;
+}
+
 p {
   text-align: justify;
+}
+
+.blist li {
+  margin: 5px initial;
 }

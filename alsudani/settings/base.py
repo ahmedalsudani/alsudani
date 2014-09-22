@@ -13,20 +13,13 @@ TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),
 
 # Application definition
 INSTALLED_APPS = (
+    'alsudani',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    # TODO try to get rid of
-    'django.contrib.sites',
     'django.contrib.staticfiles',
-    'simpleblog',
-    'pipeline',
-    # TODO shouldn't have to be here
-    'endless_pagination',
-    'markdown_deux',
-    'pagedown',
 )
 
 ALLOWED_HOSTS = [
