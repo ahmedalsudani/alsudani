@@ -24,4 +24,5 @@ DATABASES = {
     }
 }
 
-GA_CODE = ''
+GA_CODE = '0'
+SC_PROJECT, SC_SECURITY = ('0', '0')

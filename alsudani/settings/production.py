@@ -21,3 +21,6 @@ DATABASES = {
 
 # Google analytics
 GA_CODE = os.environ['GA_CODE']
+
+# Statcounter
+SC_PROJECT, SC_SECURITY = os.environ['SC_CREDS'].split(r':')

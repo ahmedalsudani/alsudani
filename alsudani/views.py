@@ -9,9 +9,15 @@ from . import models
 class Context (DjangoContext):
     def __init__(self, dict_=None,*args, **kwargs):
         if dict_ is None:
-            dict_ = {'ga_code': settings.GA_CODE}
-        if 'ga_code' not in dict_:
+            dict_ = {
+                'ga_code': settings.GA_CODE,
+                'sc_project': settings.SC_PROJECT,
+                'sc_security': settings.SC_SECURITY
+            }
+        else:
             dict_['ga_code'] = settings.GA_CODE
+            dict_['sc_project'] = settings.SC_PROJECT
+            dict_['sc_security'] = settings.SC_SECURITY
         super(Context, self).__init__(dict_, *args, **kwargs)
 
 
