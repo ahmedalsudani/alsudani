@@ -29,13 +29,20 @@ def index(request, template='alsudani/index.html'):
 
 def about(request, template='alsudani/about.html'):
     t = loader.get_template(template)
-    return HttpResponse(t.render(Context({'title': 'About', })))
+    return HttpResponse(t.render(Context({
+        'title': 'About',
+        'description': u'Personal website: Ahmed Al-Sudani - Developer - UWaterloo',
+        })))
 
 
 def projects_home(request, template='alsudani/projects_home.html'):
     t = loader.get_template(template)
     projects = models.Project.objects.all()
-    return HttpResponse(t.render(Context({'title': 'Projects', 'projects': projects})))
+    return HttpResponse(t.render(Context({
+        'title': 'Projects',
+        'projects': projects,
+        'description': 'Look at the things I made!',
+    })))
 
 
 def project_page(request, slug, template='alsudani/project.html'):
@@ -43,6 +50,10 @@ def project_page(request, slug, template='alsudani/project.html'):
     if (project_query):
         project = project_query[0]
         t = loader.get_template(template)
-        return HttpResponse(t.render(Context({'title': project.project_name, 'project': project})))
+        return HttpResponse(t.render(Context({
+            'title': project.project_name,
+            'project': project,
+            'description': project.summary,
+        })))
     else:
         raise Http404
