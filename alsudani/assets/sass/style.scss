@@ -34,12 +34,14 @@ html {
 }
 
 body {
-  background: #eee;
+  padding:$edge-size;
+  background: #333;
   margin: 0;
   height: 100%;
 }
 
 #container {
+  border-radius: 20px;
   background: white;
   max-width: 800px;
   margin: 0 auto;
@@ -61,7 +63,8 @@ body {
 }
 
 .header {
-  background: #F0FFF4;
+  border-radius: 20px 20px 0 0;
+  background: #eed;
   padding: $edge-size;
   font-family: $header-font;
   border-bottom: 3px black double;
