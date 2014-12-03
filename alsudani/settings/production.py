@@ -24,3 +24,13 @@ GA_CODE = os.environ['GA_CODE']
 
 # Statcounter
 SC_PROJECT, SC_SECURITY = os.environ['SC_CREDS'].split(r':')
+
+AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+
+AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+
+AWS_STORAGE_BUCKET_NAME = os.environ['AWS_STORAGE_BUCKET_NAME']
+
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'

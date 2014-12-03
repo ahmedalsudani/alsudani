@@ -22,6 +22,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'markdown_deux',
     'pagedown',
+    'storages',
 )
 
 ALLOWED_HOSTS = [
