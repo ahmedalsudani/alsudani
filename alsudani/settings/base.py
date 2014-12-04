@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     'secure.al-sudani.com',
     # TODO find a way to detect elb in Apache and set header to amazon-elb
     'amazon-elb',
+    os.environ['HOST_ADDRESS']
 ]
 
 ROOT_URLCONF = 'alsudani.urls'
