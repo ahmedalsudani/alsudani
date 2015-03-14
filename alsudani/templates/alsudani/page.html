@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% load markdown_deux_tags %}
+{% block content %}
+<h2>{{ page.page_name }}</h2>
+{{ page.contents|markdown:"trusted" }}
+{% endblock %}

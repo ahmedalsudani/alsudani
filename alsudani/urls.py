@@ -18,6 +18,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls), name='admin'),
     url(r'^$', alsudani.views.about, name='index'),
+    url(r'^ephemeral/(?P<slug>[-\w]+)', alsudani.views.ephemeral_page, name='ephemeral_page'),
     url(r'^projects/$', alsudani.views.projects_home, name='projects_home'),
     url(r'^projects/(?P<slug>[-\w]+)', alsudani.views.project_page, name='project'),
     url(r'^healthcheck/', lambda request: HttpResponse('OK'), name='healthcheck'),
