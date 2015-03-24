@@ -23,6 +23,10 @@ DATABASES = {
     # }
 }
 
+# Cookies over HTTPS only
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 # Google analytics
 GA_CODE = os.environ['GA_CODE']
 
